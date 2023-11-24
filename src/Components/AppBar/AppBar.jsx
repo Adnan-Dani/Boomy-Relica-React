@@ -17,7 +17,10 @@ function AppBar() {
               <NavDropdown.Item href="#action/3.1 " className="navdropd mt-2 fw-bold">Song</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2" className="navdropd mt-1 fw-bold">Release</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link className="custom-hover fw-bold" href="#pricing ">Pricing</Nav.Link>
+ 
+            <Nav.Link className="custom-hover fw-bold" href="/pricing ">Pricing</Nav.Link>
+ 
+        
           </Nav>
           <Nav>
             <Button className="mx-2 bg-none border-purple">Sign In</Button>
