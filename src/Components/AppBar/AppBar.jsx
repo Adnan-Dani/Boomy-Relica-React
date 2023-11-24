@@ -13,15 +13,16 @@ function AppBar() {
           <Nav className="me-auto mx-auto ">
             {/* mx-auto for horizontal centering */}
             <Nav.Link href="#features">Home</Nav.Link>
-            <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+            <NavDropdown
+              className="navDropdown"
+              title="Create"
+              id="collapsible-nav-dropdown"
+            >
+              <NavDropdown.Item className="DropdownItem" href="/song">
+                Song
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
+              <NavDropdown.Item className="DropdownItem" href="/release">
+                Release
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/pricing">Pricing</Nav.Link>

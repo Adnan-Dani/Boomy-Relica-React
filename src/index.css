@@ -1,180 +1,192 @@
 :root {
-    --var-purple: #6139b8;
-    --var-red: #f81b55;
+  --var-purple: #6139b8;
+  --var-red: #f81b55;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: #121212;
-    color: white;
+  background: #121212;
+  color: white;
 }
 
 .bg-purple {
-    background-color: var(--var-purple)
+  background-color: var(--var-purple);
 }
 
 .border-purple {
-    border-color: var(--var-purple);
+  border-color: var(--var-purple);
 }
 
 .bg-none {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .nav-link {
-    color: white;
+  color: white;
 }
-
+.navDropdown {
+  color: red !important;
+}
 .text-left {
-    text-align: left !important;
+  text-align: left !important;
 }
-
+.DropdownItem {
+  background-color: #413e4d;
+  color: white;
+}
+.DropdownItem:hover {
+  background-color: #413e4d;
+  color: white;
+}
 .border-none {
-    border: none !important;
+  border: none !important;
 }
 
 /* Header */
 .header-wrapper {
-    height: 70vh;
-    width: 100%;
-    background: url("https://boomy.com/img/hero_image_05012023.826d5532.jpg") no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 70vh;
+  width: 100%;
+  background: url("https://boomy.com/img/hero_image_05012023.826d5532.jpg")
+    no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-wrapper h1 {
-    color: white;
-    font-size: 4em;
-    font-weight: 700;
-    margin-bottom: 2px;
+  color: white;
+  font-size: 4em;
+  font-weight: 700;
+  margin-bottom: 2px;
 }
 
 .header-wrapper ul {
-    list-style: none;
+  list-style: none;
 }
 
 .header-wrapper li {
-    font-weight: 400;
-    margin-bottom: 3px;
+  font-weight: 400;
+  margin-bottom: 3px;
 }
 
 /* Testimonial */
 .testimonial {
-    text-align: center;
+  text-align: center;
 }
 
 .testimonial h1 {
-    font-weight: 700;
-    color: #f1eefe;
-    font-size: 36px;
-    line-height: 24px;
-    margin-top: 50px;
-    margin-bottom: 21px;
+  font-weight: 700;
+  color: #f1eefe;
+  font-size: 36px;
+  line-height: 24px;
+  margin-top: 50px;
+  margin-bottom: 21px;
 }
 
 .testimonial h2 {
-    font-weight: 500;
-    color: #cec3fb;
-    font-size: 24px;
-    line-height: 24px;
-    margin-bottom: 50px;
+  font-weight: 500;
+  color: #cec3fb;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 50px;
 }
 
 .testimonial .photo-background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-    width: 250px;
-    margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 250px;
+  margin-bottom: 16px;
 }
 
 .testimonial .testimonial-text {
-    font-size: 16px;
-    word-wrap: break-word;
-    white-space: normal;
-    margin-bottom: 4px;
+  font-size: 16px;
+  word-wrap: break-word;
+  white-space: normal;
+  margin-bottom: 4px;
 }
 
 /* Logs */
 .logos {
-    padding-top: 40px;
-    padding-bottom: 40px;
-
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .logos ul {
-    list-style: none;
-    display: inline-flex;
-    display: flex;
-    justify-content: center;
+  list-style: none;
+  display: inline-flex;
+  display: flex;
+  justify-content: center;
 }
 
 .logos li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .logos .logo {
-    border-radius: 0.2em;
-    opacity: .9;
-    transition: opacity .2s ease-out;
+  border-radius: 0.2em;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
 }
 
 /* listoffeatures */
 
 .listoffeatures {
-    display: flex;
-    /* overflow: scroll; */
+  display: flex;
+  /* overflow: scroll; */
 }
 
 .releasename {
-    line-height: 20px;
-    font-weight: 700;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-size: 14px;
-    margin-top: 3px;
-    color: #f2eeff;
+  line-height: 20px;
+  font-weight: 700;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  margin-top: 3px;
+  color: #f2eeff;
 }
 
-
 .artistname {
-    font-size: 12px;
-    color: rgba(209, 194, 255, .7);
+  font-size: 12px;
+  color: rgba(209, 194, 255, 0.7);
 }
 
 .challenge-container {
-    display: flex;
-    align-items: center;
-    margin-top: 6px;
-    margin-bottom: 6px;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: .02em;
-    color: #f2eeff;
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #f2eeff;
 }
 
 .image-container {
-    border-radius: 2px;
-    width: 48px;
-    height: 48px;
-    overflow: hidden;
-    margin-left: 16px;
-    margin-right: 12px;
+  border-radius: 2px;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  margin-left: 16px;
+  margin-right: 12px;
 }
 
 .list-number {
-    width: 12px;
+  width: 12px;
 }
 
 .song-container {
-    margin-top: 6px;
-    margin-bottom: 6px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
-
-
 
 /* .song-container {
     flex: 1 1 0%;
@@ -188,50 +200,46 @@ body {
 } */
 
 .name-container {
-    color: rgb(242, 238, 255);
-    font-weight: 500;
+  color: rgb(242, 238, 255);
+  font-weight: 500;
 }
 
 .name-container span {
-    padding-left: 5px;
-    color: rgb(242, 238, 255);
-    font-size: 12px;
+  padding-left: 5px;
+  color: rgb(242, 238, 255);
+  font-size: 12px;
 }
-
-
 
 /* Footer */
 footer h2 {
-    color: var(--var-red);
+  color: var(--var-red);
 }
 
 footer h5 {
-    font-size: 16px !important;
-    font-weight: 400;
+  font-size: 16px !important;
+  font-weight: 400;
 }
 
 footer h5 span {
-    color: #2bffc6;
+  color: #2bffc6;
 }
 
 footer ul {
-    list-style: none;
-    display: flex;
-    margin: 10px 0;
-    margin: 20px 0;
-    padding-left: 0;
-
+  list-style: none;
+  display: flex;
+  margin: 10px 0;
+  margin: 20px 0;
+  padding-left: 0;
 }
 
-
 footer a {
-    color: white;
+  color: white;
 }
 
 footer .copyright {
-    margin: 20px 0;
-    font-size: .7em;
-    color: #c5cae9;
+  margin: 20px 0;
+  font-size: 0.7em;
+  color: #c5cae9;
 }
 
 /* Comment */

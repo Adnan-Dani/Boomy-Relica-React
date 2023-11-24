@@ -1,0 +1,73 @@
+.CrossButton {
+  background-color: transparent;
+  border: none;
+}
+.CrossButton:hover {
+  background-color: transparent;
+  border: none;
+}
+.CrossButton:focus {
+  background-color: transparent;
+  border: none;
+}
+.box {
+  width: 50%;
+}
+.Title {
+  padding-left: 0 !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #f2eeff;
+}
+.SubTitile {
+  margin-top: 20px !important;
+  font-style: normal;
+
+  font-size: 20px;
+  color: #f2eeff;
+  font-weight: 500;
+  line-height: 2rem;
+}
+.titleDescription {
+  color: #f2eeff;
+  margin-bottom: 10px;
+}
+.cardTitle {
+  color: #d5cff5;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.cardDescription {
+  font-size: 12px;
+  color: #f2eeff;
+
+  padding-bottom: 8px;
+}
+.card {
+  background-color: #1f1f29;
+  height: 130px;
+  border: none !important;
+}
+
+.preview {
+  color: #f2eeff;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.5rem;
+}
+.playicon {
+  background-color: #1f1f29;
+  border-radius: 180px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.iconPreview {
+  display: flex;
+  background-color: #2f2e41;
+  padding: 10px;
+}

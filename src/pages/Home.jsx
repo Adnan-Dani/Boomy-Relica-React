@@ -1,6 +1,6 @@
 // Custom Componets
 import Banner from "../Components/Banner";
-
+import Footer from "../Components/Footer/Footer";
 // React Bootstrap
 import { Container, Row, Col, ListGroup } from "react-bootstrap";
 
@@ -104,6 +104,7 @@ const Home = () => {
           </Col>
         </Row>
       </Container>
+      <Footer />
     </>
   );
 };

@@ -5,6 +5,7 @@ import Accordion from "react-bootstrap/Accordion";
 import Pricingcard from "../../common/Pricingcard";
 import { TiTick } from "react-icons/ti";
 import { RxCross2 } from "react-icons/rx";
+import Footer from "../Footer/Footer";
 
 const Pricing = () => {
   const accordionData = [
@@ -172,13 +173,13 @@ const Pricing = () => {
         </div>
 
         <Row className="my-5">
-          <Col lg={4} xs={12} className="d-flex justify-content-center ">
+          <Col lg={4} xs={12} className="my-lg-0 my-5">
             <Pricingcard data={free} features={freeFeatures} />
           </Col>
-          <Col lg={4} xs={12}>
+          <Col lg={4} xs={12} className="my-lg-0 my-5">
             <Pricingcard data={Create} features={CreatorFeatures} />
           </Col>
-          <Col lg={4} xs={12}>
+          <Col lg={4} xs={12} className="my-lg-0 my-5">
             <Pricingcard data={pro} features={proFeatures} />
           </Col>
         </Row>
@@ -201,6 +202,7 @@ const Pricing = () => {
           ))}
         </Accordion>
       </Container>
+      <Footer />
     </>
   );
 };

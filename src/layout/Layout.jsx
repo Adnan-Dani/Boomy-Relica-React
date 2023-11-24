@@ -11,17 +11,16 @@ const Layout = () => {
       <div
         style={{
           background:
-            window.location.pathname === "/pricing" ? `url(${background})` : "",
+            window.location.pathname === "/pricing" ||
+            window.location.pathname === "/song"
+              ? `url(${background})`
+              : "",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
       >
         <AppBar />
         <Outlet />
-        <Container>
-          <hr />
-        </Container>
-        <Footer />
       </div>
     </>
   );
