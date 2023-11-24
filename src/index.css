@@ -235,3 +235,30 @@ footer .copyright {
 }
 
 /* Comment */
+
+.custom-hover:hover {
+    border-top: 4px solid red; /* Red border on top */
+    color: red; /* Bootstrap's danger color */
+    cursor: pointer; /* Change cursor on hover */
+  }
+  /* FullScreenVideo.css */
+
+.full-screen-video-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .full-screen-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire container */
+  }
+  .background{
+
+        background-color: #1d0d3d80;
+  }

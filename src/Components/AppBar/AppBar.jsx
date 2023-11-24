@@ -6,15 +6,15 @@ function AppBar() {
     <Navbar collapseOnSelect expand="lg">
       <Container>
         <Navbar.Brand href="#home" className="text-white">
-          RFM Official
+          <h3 className="text-danger"> Boomy</h3>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto mx-auto ">
             {/* mx-auto for horizontal centering */}
-            <Nav.Link href="#features">Home</Nav.Link>
+            <Nav.Link className="custom-hover" href="#features">Home</Nav.Link>
             <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item className="custom-hover" href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
               </NavDropdown.Item>
@@ -24,7 +24,7 @@ function AppBar() {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link className="custom-hover" href="#pricing">Pricing</Nav.Link>
           </Nav>
           <Nav>
             <Button className="mx-2 bg-none border-purple">Sign In</Button>

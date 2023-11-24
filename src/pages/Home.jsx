@@ -1,13 +1,18 @@
 // Custom Componets
 import Banner from "../Components/Banner";
+import { Dropdown } from 'react-bootstrap';
+
 
 // React Bootstrap
 import { Container, Row, Col, ListGroup } from "react-bootstrap";
+import Video from "../Components/Video";
+import Playlist from "../Components/Playlist/Playlist";
 
 const Home = () => {
   return (
     <>
       <Banner />
+      <Video/>
       <Container className="testimonial">
         <Row className="mb-5">
           <Col>
@@ -44,6 +49,12 @@ const Home = () => {
             ))}
           </ul>
         </Row>
+        <Row>
+<Col>
+<Playlist/>
+</Col>
+
+        </Row>
         <Row className="text-left">
           <Col>
             <h2>Featured releases</h2>
@@ -63,6 +74,36 @@ const Home = () => {
               </div>
             ))}
           </Col>
+          <div className="row">
+            <div className="col-md-10">
+
+              <form className="d-flex">
+      <input
+        className="form-control me-2"
+        type="search"
+        placeholder="Search Song"
+        aria-label="Search"
+      />
+      <button className="btn btn-outline-success" type="submit">
+        Search 
+      </button>
+    </form>
+ 
+            </div>
+            <div className="col-md-2">
+            <Dropdown>
+      <Dropdown.Toggle variant="success" id="dropdown-basic">
+        Sort By: Date created
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        <Dropdown.Item href="#action/1">Option 1</Dropdown.Item>
+        <Dropdown.Item href="#action/2">Option 2</Dropdown.Item>
+        <Dropdown.Item href="#action/3">Option 3</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+            </div>
+          </div>
         </Row>
         {/* Input Filed */}
         <Row>
@@ -84,6 +125,8 @@ const Home = () => {
             </ul>
           </Col>
           <Col>
+
+          
             <h2 className="text-left mb-4 text-white">Feature release</h2>
 
             <ListGroup className="bg-none">
