@@ -24,7 +24,7 @@ function AppBar() {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link href="/pricing">Pricing</Nav.Link>
           </Nav>
           <Nav>
             <Button className="mx-2 bg-none border-purple">Sign In</Button>
