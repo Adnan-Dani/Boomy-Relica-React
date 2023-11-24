@@ -5,8 +5,10 @@ function AppBar() {
   return (
     <Navbar collapseOnSelect expand="lg">
       <Container>
-        <Navbar.Brand href="#home" className="text-white">
-          <h3 className="text-danger"> RFM Offical </h3>
+        <Navbar.Brand href="#home" className="text-white d-flex gap-2 items-center">
+
+          <img src="assets/logo.jpg" alt="" className="logowidth" />
+          <h3 className="text-danger">  RFM Offical </h3>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
