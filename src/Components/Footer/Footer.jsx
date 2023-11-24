@@ -1,6 +1,7 @@
 import { Container, Button } from "react-bootstrap";
 import { FaDiscord } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
+
 import { CiTwitter } from "react-icons/ci";
 const Footer = () => {
   return (
@@ -21,6 +22,9 @@ const Footer = () => {
           <Button variant="outline-primary border-purple text-white mx-2">
             <CiTwitter /> join
           </Button>
+       
+
+
         </div>
         <ul className="footer-btns">
           <li className="list-item">
