@@ -11,7 +11,7 @@ const Home = () => {
       <Container className="testimonial">
         <Row className="mb-5">
           <Col>
-            <h1>The Boomy Effect</h1>
+            <h1>The RFM Effect</h1>
             <h2>How people are using Boomy to empower their creativity</h2>
           </Col>
         </Row>
@@ -78,9 +78,7 @@ const Home = () => {
                       alt=""
                     />
                   </div>
-                  <span data-v-6a2359f3="" className="font-weight-500">
-                    #chill
-                  </span>
+                  <span className="font-weight-500">#chill</span>
                 </li>
               ))}
             </ul>

@@ -6,9 +6,10 @@ const Footer = () => {
   return (
     <footer>
       <Container>
-        <h2>Boomy</h2>
+        <h2>RFM Official</h2>
         <h5>
-          Boomy artists have created <span>18,082,786</span> original songs.
+          RFM Official artists have created <span>18,082,786</span> original
+          songs.
         </h5>
         <div>
           <Button variant="outline-primary border-purple text-white ">
@@ -34,8 +35,8 @@ const Footer = () => {
         </ul>
         <div>
           <div className="copyright">
-            ⓟ © 2019-2023 Boomy Corporation · 2991 Sacramento St. Unit #207
-            Berkeley, CA 94702 · 510-730-3746
+            ⓟ © 2019-2023 RFM Official Corporation · 2991 Sacramento St. Unit
+            #207 Berkeley, CA 94702 · 510-730-3746
           </div>
         </div>
       </Container>

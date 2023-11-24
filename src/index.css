@@ -198,6 +198,9 @@ body {
     font-size: 12px;
 }
 
+
+
+/* Footer */
 footer h2 {
     color: var(--var-red);
 }
@@ -230,3 +233,5 @@ footer .copyright {
     font-size: .7em;
     color: #c5cae9;
 }
+
+/* Comment */

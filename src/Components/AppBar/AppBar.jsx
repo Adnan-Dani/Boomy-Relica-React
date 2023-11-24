@@ -6,7 +6,7 @@ function AppBar() {
     <Navbar collapseOnSelect expand="lg">
       <Container>
         <Navbar.Brand href="#home" className="text-white">
-          React-Bootstrap
+          RFM Official
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

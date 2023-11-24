@@ -4,7 +4,7 @@ const Banner = () => {
     <div className="header-wrapper">
       <div className="text-center">
         <h1>Unleash your creativity</h1>
-        <h1>Make music with Boomy AI</h1>
+        <h1>Make music with RFM Official</h1>
         <ul className="list-unstyle">
           <li className="list-item">
             🎶 Create original songs in seconds, even if you've never made music
