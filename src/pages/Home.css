@@ -1,0 +1,35 @@
+.Header {
+  font-size: 4rem !important;
+  font-weight: 700;
+}
+.list-item {
+  display: flex;
+  justify-content: center;
+}
+.list-unstyle {
+  margin-top: 30px;
+}
+.testamonialHeading {
+  font-weight: 700;
+  color: #f1eefe;
+  font-size: 36px;
+  line-height: 24px;
+}
+.testamonialSubHeading {
+  font-weight: 500;
+  color: #cec3fb;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 992px) {
+  .Header {
+    font-size: 2rem !important;
+    font-weight: 700;
+  }
+  .list-item {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+}

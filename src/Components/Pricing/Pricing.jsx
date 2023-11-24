@@ -18,19 +18,19 @@ const Pricing = () => {
     {
       title: "What is my share of royalties? How is it calculated?",
       description:
-        "Royalties are calculated and reported by streaming services and stores, and rates vary widely depending on the outlet. While Boomy has no control over the rates paid by distribution partners, we actively seek all available royalties in order to maximize your earnings. Your share of royalties is 80% net of distribution fees, which include fees imposed by distribution partners managing Boomy releases and transaction fees imposed by payout partners like PayPal and Stripe. The remaining share of royalties is used by Boomy Corporation to fund operations and continue providing a free service.",
+        "Royalties are calculated and reported by streaming services and stores, and rates vary widely depending on the outlet. While FRM Offical has no control over the rates paid by distribution partners, we actively seek all available royalties in order to maximize your earnings. Your share of royalties is 80% net of distribution fees, which include fees imposed by distribution partners managing FRM Offical releases and transaction fees imposed by payout partners like PayPal and Stripe. The remaining share of royalties is used by FRM Offical Corporation to fund operations and continue providing a free service.",
       key: "2",
     },
     {
       title: "How often is my share of royalties paid?",
       description:
-        "Streaming revenue is deposited after it is received by Boomy from streaming services and stores, which is usually 2-3 months after the streams in a given month occur. This is different than the streaming activity of your releases, which is reported with a 1-5 day lag. Royalty share is deposited monthly,  between the 15th and 31st of each month. Let's say you earn 100 streams from Apple Music on September 1st. Those streams will start to be visible in your release's page on September 2nd-7th. Then, your revenue for those 100 streams would in most cases be deposited on November 15th, after the revenue is reported and confirmed by Apple Music to Boomy.",
+        "Streaming revenue is deposited after it is received by FRM Offical from streaming services and stores, which is usually 2-3 months after the streams in a given month occur. This is different than the streaming activity of your releases, which is reported with a 1-5 day lag. Royalty share is deposited monthly,  between the 15th and 31st of each month. Let's say you earn 100 streams from Apple Music on September 1st. Those streams will start to be visible in your release's page on September 2nd-7th. Then, your revenue for those 100 streams would in most cases be deposited on November 15th, after the revenue is reported and confirmed by Apple Music to FRM Offical.",
       key: "3",
     },
     {
       title: "How do I withdraw my share of royalties?",
       description:
-        " After your PayPal account has been synced, you may submit a request to withdraw a portion or all of your Boomy balance. You will receive a withdrawal processing estimate after submitting the request. Most withdrawals are processed within 5-7 business days, but future withdrawals to the same verified PayPal will usually process much faster.",
+        " After your PayPal account has been synced, you may submit a request to withdraw a portion or all of your FRM Offical balance. You will receive a withdrawal processing estimate after submitting the request. Most withdrawals are processed within 5-7 business days, but future withdrawals to the same verified PayPal will usually process much faster.",
       key: "4",
     },
     {
@@ -167,7 +167,7 @@ const Pricing = () => {
         </div>
         <div className=" pricingDescription">
           <p>
-            Unleash your creativity with AI! Boomy offers three membership
+            Unleash your creativity with AI! FRM Offical offers three membership
             options to support your goals from creation to distribution.
           </p>
         </div>

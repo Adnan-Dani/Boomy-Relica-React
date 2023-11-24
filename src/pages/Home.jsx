@@ -1,10 +1,9 @@
 // Custom Componets
 import Banner from "../Components/Banner";
 import { Dropdown } from "react-bootstrap";
-
+import "./Home.css";
 // React Bootstrap
 import { Container, Row, Col, ListGroup } from "react-bootstrap";
-import Video from "../Components/Video";
 import Playlist from "../Components/Playlist/Playlist";
 
 const Home = () => {
@@ -12,20 +11,22 @@ const Home = () => {
     <>
       <Banner />
       <Container className="testimonial">
-        <Row className="mb-5">
+        <Row className="">
           <Col>
-            <h1>The RFM Effect</h1>
-            <h2>How people are using Boomy to empower their creativity</h2>
+            <h1 className="testamonialHeading">The RFM Effect</h1>
+            <h4 className="testamonialSubHeading">
+              How people are using FRM Offical to empower their creativity
+            </h4>
           </Col>
         </Row>
-
-        <div className="row">
+        <Row>
           <div className="col-md-3">
             <div>
               <img src="assets/10031.png" height="250px" width="250px" alt="" />
               <h5 className=" ">
-                "Boomy became my band. Boomy is the reason why I'm getting back
-                into music - I now have this second opportunity." Xwen 11
+                "FRM Offical became my band. FRM Offical is the reason why I'm
+                getting back into music - I now have this second opportunity."
+                Xwen 11
               </h5>
             </div>
           </div>
@@ -33,9 +34,9 @@ const Home = () => {
             <div>
               <img src="assets/10032.png" height="250px" width="250px" alt="" />
               <h5>
-                "It's incredible taking newly generated song ideas from Boomy
-                that I'd never think of, and flipping them to create something I
-                truly love." Lightfoot
+                "It's incredible taking newly generated song ideas from FRM
+                Offical that I'd never think of, and flipping them to create
+                something I truly love." Lightfoot
               </h5>
             </div>
           </div>
@@ -44,8 +45,8 @@ const Home = () => {
               <img src="assets/10033.png" height="250px" width="250px" alt="" />
               <h5>
                 "I love creating tracks to pair with AI-generated animations. I
-                use my own vocals and the Boomy auto-vocal feature to try and
-                find the perfect spot in the uncanny valley." Kier
+                use my own vocals and the FRM Offical auto-vocal feature to try
+                and find the perfect spot in the uncanny valley." Kier
               </h5>
             </div>
           </div>
@@ -58,30 +59,30 @@ const Home = () => {
               </h5>
             </div>
           </div>
-        </div>
-        <div className="row my-5 gap-5">
-          <div className="col-md-1">
+        </Row>
+        <div className="row my-5 gap-5 d-flex justify-content-center  ">
+          <div className="col-lg-1 col-sm-2  col-3">
             <img className="imgsize" src="assets/10019.png" alt="" />
           </div>
-          <div className="col-md-1">
+          <div className="col-lg-1 col-sm-2 col-3">
             <img className="imgsize" src="assets/10018.png" alt="" />
           </div>
-          <div className="col-md-1">
+          <div className="col-lg-1 col-sm-2 col-3">
             <img className="imgsize" src="assets/10019.png" alt="" />
           </div>
-          <div className="col-md-1">
+          <div className="col-lg-1 col-sm-2 col-3">
             <img className="imgsize" src="assets/10020.png" alt="" />
           </div>
-          <div className="col-md-1">
+          <div className="col-lg-1 col-sm-2 col-3">
             <img className="imgsize" src="assets/10021.png" alt="" />
           </div>
-          <div className="col-md-1">
+          <div className="col-lg-1 col-sm-2 col-3">
             <img className="imgsize" src="assets/10022.png" alt="" />
           </div>
-          <div className="col-md-1">
+          <div className="col-lg-1 col-sm-2 col-3">
             <img className="imgsize" src="assets/10023.png" alt="" />
           </div>
-          <div className="col-md-1">
+          <div className="col-lg-1 col-sm-2 col-3">
             <img className="imgsize" src="assets/10024.png" alt="" />
           </div>
         </div>
@@ -176,6 +177,7 @@ const Home = () => {
         </Row>
 
         <div className="row">
+          <h2 className="text-start">Featured songs</h2>
           <div className="col-md-2 ">
             <div className="d-flex justify-between gap-3">
               <p className="mt-2">1</p>
