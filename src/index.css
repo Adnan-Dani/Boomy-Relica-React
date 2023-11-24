@@ -31,6 +31,24 @@ body {
 }
 .navDropdown {
   color: red !important;
+  color: white;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.navdropd {
+  background-color: #6139b8 !important;
+  color: white !important;
+  border-radius: 10px;
+  text-align: center;
+  font-style: bold !important;
+  width: 100px;
+}
+
+.dropdown-menu[data-bs-popper] {
+  background-color: transparent;
 }
 .text-left {
   text-align: left !important;
@@ -243,3 +261,120 @@ footer .copyright {
 }
 
 /* Comment */
+
+.custom-hover:focus {
+  border-top: 4px solid red;
+  /* Red border on top */
+  color: red;
+  /* Bootstrap's danger color */
+  cursor: pointer;
+  /* Change cursor on hover */
+  color: red !important;
+}
+
+.custom-hover:hover {
+  border-top: 4px solid red;
+  /* Red border on top */
+  color: red;
+  /* Bootstrap's danger color */
+  cursor: pointer;
+  /* Change cursor on hover */
+  color: red !important;
+}
+/* FullScreenVideo.css */
+
+.full-screen-video-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.full-screen-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensures the video covers the entire container */
+}
+
+/* .background{
+
+        background-color: #1d0d3d80;
+        position: relative;
+  } */
+.imgsize {
+  width: 130px;
+  border-radius: 5px;
+}
+
+.dropdsearch {
+  background-color: #3c374a;
+  border-color: #121212;
+}
+
+.dropdsearch:hover {
+  background-color: #373049;
+  border-color: #121212;
+}
+
+/* .card2sec{ 
+    position: absolute;
+margin-top: 80px;
+margin-left: -5%;
+z-index: 1;
+
+
+  } */
+.card2sec {
+  position: relative;
+  /* Change from absolute to relative */
+  top: 80px;
+  /* Adjusted from margin-top */
+  left: -55%;
+  /* Adjusted from margin-left */
+  z-index: 2;
+  transform: rotate(4deg);
+}
+
+.background {
+  background-color: #130927ea;
+  position: relative;
+  z-index: 3;
+  /* Add z-index to ensure it's behind card2sec */
+}
+
+.card2sec-img {
+  width: 260px;
+}
+
+.card3sec {
+  position: relative;
+  /* Change from absolute to relative */
+  top: -120px;
+  left: -35%;
+  /* Adjusted from margin-left */
+  z-index: -1;
+  transform: rotate(10deg);
+}
+
+.card3sec-img {
+  width: 260px !important;
+}
+.imagesss {
+  width: 100px;
+  border: radius 2px;
+}
+.imagesss:hover {
+  border-color: #2bffc6;
+}
+
+.logowidth {
+  width: 40px;
+}
+.bgmusic:hover {
+  background-color: #444444;
+  border-radius: 5px;
+}

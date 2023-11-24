@@ -5,27 +5,42 @@ function AppBar() {
   return (
     <Navbar collapseOnSelect expand="lg">
       <Container>
-        <Navbar.Brand href="#home" className="text-white">
-          RFM Official
+        <Navbar.Brand
+          href="#home"
+          className="text-white d-flex gap-2 items-center"
+        >
+          <img src="assets/logo.jpg" alt="" className="logowidth" />
+          <h3 className="text-danger"> RFM Offical </h3>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto mx-auto ">
             {/* mx-auto for horizontal centering */}
-            <Nav.Link href="#features">Home</Nav.Link>
+            <Nav.Link className="custom-hover fw-bold" href="#features">
+              Home
+            </Nav.Link>
             <NavDropdown
-              className="navDropdown"
-              title="Create"
+              className="fw-bold "
+              title="Dropdown"
               id="collapsible-nav-dropdown"
             >
-              <NavDropdown.Item className="DropdownItem" href="/song">
+              <NavDropdown.Item
+                href="#action/3.1 "
+                className="navdropd mt-2 fw-bold"
+              >
                 Song
               </NavDropdown.Item>
-              <NavDropdown.Item className="DropdownItem" href="/release">
+              <NavDropdown.Item
+                href="#action/3.2"
+                className="navdropd mt-1 fw-bold"
+              >
                 Release
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/pricing">Pricing</Nav.Link>
+
+            <Nav.Link className="custom-hover fw-bold" href="/pricing ">
+              Pricing
+            </Nav.Link>
           </Nav>
           <Nav>
             <Button className="mx-2 bg-none border-purple">Sign In</Button>
