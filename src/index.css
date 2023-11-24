@@ -22,8 +22,23 @@ body {
 
 .nav-link {
     color: white;
+    
 }
+.nav-link:hover{
+    color: white;
+}
+.navdropd{
+background-color: #6139b8 !important;
+color: white !important;
+border-radius: 10px; 
+text-align: center;
+font-style: bold !important;
+width: 100px;
 
+}
+.dropdown-menu[data-bs-popper]{
+    background-color: transparent;
+}
 .text-left {
     text-align: left !important;
 }
@@ -236,10 +251,11 @@ footer .copyright {
 
 /* Comment */
 
-.custom-hover:hover {
+.custom-hover:focus {
     border-top: 4px solid red; /* Red border on top */
     color: red; /* Bootstrap's danger color */
     cursor: pointer; /* Change cursor on hover */
+    color: red !important;
   }
   /* FullScreenVideo.css */
 
@@ -258,7 +274,42 @@ footer .copyright {
     height: 100%;
     object-fit: cover; /* Ensures the video covers the entire container */
   }
-  .background{
+  /* .background{
 
         background-color: #1d0d3d80;
+        position: relative;
+  } */
+  .imgsize{
+    width: 130px;
+    border-radius: 5px;
   }
+  .dropdsearch{
+    background-color:#3c374a;
+    border-color: #121212;
+  }
+  .dropdsearch:hover{
+    background-color: #373049;
+    border-color: #121212;
+  }
+  /* .card2sec{ 
+    position: absolute;
+margin-top: 80px;
+margin-left: -5%;
+z-index: 1;
+
+
+  } */
+  .card2sec {
+    position: relative; /* Change from absolute to relative */
+    top: 80px; /* Adjusted from margin-top */
+    left: -55%; /* Adjusted from margin-left */
+    z-index: 0;
+    transform: rotate(5deg);
+  }
+  
+  .background {
+    background-color: #1d0d3d80;
+    position: relative;
+    z-index: 1; /* Add z-index to ensure it's behind card2sec */
+  }
+  
