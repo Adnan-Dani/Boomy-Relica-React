@@ -183,7 +183,7 @@ const Pricing = () => {
           </Col>
         </Row>
 
-        <h1 className="my-5">Questions?We're here to help </h1>
+        <h1 className="mb-5">Questions?We're here to help </h1>
         <Accordion defaultActiveKey="0">
           {accordionData.map((data) => (
             <Accordion.Item
