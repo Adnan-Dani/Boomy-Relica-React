@@ -21,6 +21,7 @@ const Layout = () => {
       >
         <AppBar />
         <Outlet />
+        <Footer />
       </div>
     </>
   );

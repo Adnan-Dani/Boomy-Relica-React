@@ -11,7 +11,6 @@ const Home = () => {
   return (
     <>
       <Banner />
-      <Video />
       <Container className="testimonial">
         <Row className="mb-5">
           <Col>
@@ -175,48 +174,7 @@ const Home = () => {
             </div>
           </div>
         </Row>
-        {/* Input Filed */}
-        {/* <Row>
-        
-          <Col>
-            <h2 className="text-left mb-4 text-white">Trending</h2>
-            <ul>
-              {[2, 32, 32, 3223, 232, 323, 23].map((t, i) => (
-                <li key={t} className="challenge-container">
-                  <div className="list-number"> {i + 1} </div>
-                  <div className="image-container">
-                    <img
-                      src="https://storage.googleapis.com/boomy-assets/rap-thumb.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <span className="font-weight-500">#chill</span>
-                </li>
-              ))}
-            </ul>
-          </Col>
-          <Col>
 
-          
-            <h2 className="text-left mb-4 text-white">Feature release</h2>
-
-            <ListGroup className="bg-none">
-              {[2, 32, 3232, 232, 323, 23].map((t) => (
-                <ListGroup.Item
-                  key={t}
-                  as="li"
-                  className="d-flex justify-content-between align-items-start bg-none border-none"
-                >
-                  <div className="name-container">
-                    <div className="">Subheading</div>
-                    <span>Cras justo odio</span>
-                  </div>
-                  <span className="text-white">00:02</span>
-                </ListGroup.Item>
-              ))}
-            </ListGroup>
-          </Col>
-        </Row> */}
         <div className="row">
           <div className="col-md-2 ">
             <div className="d-flex justify-between gap-3">
@@ -288,7 +246,6 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      <Footer />
     </>
   );
 };
