@@ -1,11 +1,16 @@
+import React, {useState, useEffect } from "react";
 import { Container, Button, Nav } from "react-bootstrap";
 import { FaDiscord } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 
 import { CiTwitter } from "react-icons/ci";
 const Footer = () => {
+  const [path, setPath] = useState(location.pathname);
+  useEffect(() => {
+    setPath(location.pathname);
+  }, [location.pathname]);
   return (
-    <footer>
+    <footer style={{ backgroundColor:  ` ${path === "/" ? "black": ""}`}}>
       <Container>
         <h2>RFM Official</h2>
         <h5>

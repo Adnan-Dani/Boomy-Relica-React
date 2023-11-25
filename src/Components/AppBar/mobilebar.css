@@ -1,15 +1,51 @@
 .mobile-nav {
-    background: #F1F1F1;
-    position: fixed;
-    bottom: 0;
-    height: 65px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+  background: black;
+  position: fixed;
+  bottom: 0;
+  height: 65px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden !important;
+  z-index: 1;
 }
 
 .bloc-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+.IsActive {
+  border-bottom: 5px solid #f81b55;
+
+}
+
+a div {
+  font-size: medium;
+}
+
+.createAnchor {
+  position: relative;
+}
+
+.CreateDropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: -85px;
+  z-index: 5;
+}
+
+.CreateDropdown Button {
+  width: 100px;
+  margin: 5px;
 }

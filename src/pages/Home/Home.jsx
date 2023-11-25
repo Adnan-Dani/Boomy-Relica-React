@@ -2,7 +2,6 @@
 import Banner from "../../Components/Banner";
 import { Dropdown } from "react-bootstrap";
 import "./Home.css";
-
 // React Bootstrap
 import { Container, Row, Col } from "react-bootstrap";
 import Playlist from "../../Components/Playlist/Playlist";
@@ -32,8 +31,9 @@ const Home = () => {
   ];
   return (
     <>
+    <div className="testimonial">
       <Banner />
-      <Container className="testimonial">
+      <Container >
         <Row>
           <Col>
             <h1 className="testamonialHeading">The RFM Effect</h1>
@@ -90,71 +90,76 @@ const Home = () => {
             <Playlist />
           </Col>
         </Row>
-        <Row className="text-left">
+        <Row className="text-left ">
           <Col>
             <h2>Featured releases</h2>
           </Col>
         </Row>
-        <Row className="pb-5">
-          <div className="row gap-4">
-            <div className="col-md-1  text-start">
+      
+
+        <div className=" featured">
+            <div className="  text-start">
               <img src="assets/1.jpg" width="100" height="100" />
               <p className="releasename">Valley Of Gua...</p>
               <p className="artistname">DemonC0re</p>
             </div>
-            <div className="col-md-1  text-start">
+            <div className="  text-start ">
               <img src="assets/2.jpeg" width="100" height="100" />
               <p className="releasename">Valley Of Gua...</p>
               <p className="artistname">DemonC0re</p>
             </div>{" "}
-            <div className="col-md-1  text-start">
+            <div className=" text-start">
               <img src="assets/3.jpeg" width="100" height="100" />
               <p className="releasename">Valley Of Gua...</p>
               <p className="artistname">DemonC0re</p>
             </div>{" "}
-            <div className="col-md-1  text-start">
+            <div className="  text-start">
               <img src="assets/4.jpg" width="100" height="100" />
               <p className="releasename">Valley Of Gua...</p>
               <p className="artistname">DemonC0re</p>
             </div>{" "}
-            <div className="col-md-1  text-start">
+            <div className=" text-start">
               <img src="assets/5.jpeg" width="100" height="100" />
               <p className="releasename">Valley Of Gua...</p>
               <p className="artistname">DemonC0re</p>
             </div>{" "}
-            <div className="col-md-1  text-start">
+            <div className=" text-start">
               <img src="assets/6.jpeg" width="100" height="100" />
               <p className="releasename">Valley Of Gua...</p>
               <p className="artistname">DemonC0re</p>
             </div>{" "}
-            <div className="col-md-1  text-start">
+            <div className=" text-start">
               <img src="assets/10010.jpeg" width="100" height="100" />
               <p className="releasename">Valley Of Gua...</p>
               <p className="artistname">DemonC0re</p>
             </div>{" "}
-            <div className="col-md-1  text-start">
+            <div className=" text-start">
               <img src="assets/2.jpeg" width="100" height="100" />
               <p className="releasename">Valley Of Gua...</p>
               <p className="artistname">DemonC0re</p>
             </div>{" "}
-            <div className="col-md-1  text-start">
+            <div className=" text-start">
               <img src="assets/4.jpg" width="100" height="100" />
               <p className="releasename">Valley Of Gua...</p>
               <p className="artistname">DemonC0re</p>
             </div>
           </div>
+       
+        <Row className="pb-5" >
+    
           <div className="row">
-            <div className="col-md-10">
+            <div className="col-md-10 col-6 ">
               <form className="d-flex">
                 <input
                   className="form-control bg-transparent text-white me-2"
                   type="search"
                   placeholder="Search Song"
                   aria-label="Search"
+                 style={{width:"100vw"}}
                 />
               </form>
             </div>
-            <div className="col-md-2">
+            <div className="col-md-2 col-6">
               <Dropdown>
                 <Dropdown.Toggle
                   className="dropdsearch"
@@ -174,9 +179,9 @@ const Home = () => {
           </div>
         </Row>
 
-        <div className="row">
+        <div className="row py-5">
           <div className="col-lg-6">
-            <h2 className="text-start">Featured songs</h2>
+            <h2 className="text-start">Trending</h2>
             <div>
               <div className="d-flex justify-between gap-3">
                 <p className="mt-2">1</p>
@@ -232,7 +237,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="col-lg-6 ">
+          <div className="col-lg-6 mt-md-0 mt-5 ">
             <h2 className="text-start">Featured songs</h2>
             {[1, 2, 3, 4].map((m) => (
               <div
@@ -251,6 +256,7 @@ const Home = () => {
           </div>
         </div>
       </Container>
+      </div>
     </>
   );
 };
