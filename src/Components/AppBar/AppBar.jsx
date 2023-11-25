@@ -1,11 +1,13 @@
 import Container from "react-bootstrap/Container";
 import { Button, NavDropdown, Navbar, Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import MobileBar from "./MobileBar";
 
 function AppBar() {
   // const
   return (
     <Navbar collapseOnSelect expand="lg">
+      <MobileBar />
       <Container>
         <Navbar.Brand
           href="#home"

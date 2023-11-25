@@ -1,4 +1,4 @@
-import { Container, Button } from "react-bootstrap";
+import { Container, Button, Nav } from "react-bootstrap";
 import { FaDiscord } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 
@@ -12,20 +12,18 @@ const Footer = () => {
           RFM Official artists have created <span>18,082,786</span> original
           songs.
         </h5>
-        <div>
-          <Button variant="outline-primary border-purple text-white ">
+        <div className="footer-join-btns">
+          <Button variant="outline-primary border-purple text-white m-1">
             <FaDiscord /> Join Discord
           </Button>
-          <Button variant="outline-primary border-purple text-white mx-2">
+          <Button variant="outline-primary border-purple text-white m-1">
             <CiMail /> Say hello
           </Button>
-          <Button variant="outline-primary border-purple text-white mx-2">
+          <Button variant="outline-primary border-purple text-white m-1">
             <CiTwitter /> join
           </Button>
-       
-
-
         </div>
+
         <ul className="footer-btns">
           <li className="list-item">
             <a href="#">Pricing</a>
