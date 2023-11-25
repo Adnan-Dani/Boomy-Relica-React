@@ -29,6 +29,7 @@ body {
 .nav-link {
   color: white;
 }
+
 .navDropdown {
   color: red !important;
   color: white;
@@ -50,17 +51,21 @@ body {
 .dropdown-menu[data-bs-popper] {
   background-color: transparent;
 }
+
 .text-left {
   text-align: left !important;
 }
+
 .DropdownItem {
   background-color: #413e4d;
   color: white;
 }
+
 .DropdownItem:hover {
   background-color: #413e4d;
   color: white;
 }
+
 .border-none {
   border: none !important;
 }
@@ -69,8 +74,7 @@ body {
 .header-wrapper {
   height: 70vh;
   width: 100%;
-  background: url("https://boomy.com/img/hero_image_05012023.826d5532.jpg")
-    no-repeat;
+  background: url("https://boomy.com/img/hero_image_05012023.826d5532.jpg") no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -112,7 +116,7 @@ body {
   color: #cec3fb;
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 
 .testimonial .photo-background {
@@ -262,7 +266,10 @@ footer .copyright {
 
 /* Comment */
 
-.custom-hover:focus {
+
+
+.custom-hover:focus,
+.active {
   border-top: 4px solid red;
   /* Red border on top */
   color: red;
@@ -281,6 +288,7 @@ footer .copyright {
   /* Change cursor on hover */
   color: red !important;
 }
+
 /* FullScreenVideo.css */
 
 .full-screen-video-container {
@@ -363,10 +371,12 @@ z-index: 1;
 .card3sec-img {
   width: 260px !important;
 }
+
 .imagesss {
   width: 100px;
   border: radius 2px;
 }
+
 .imagesss:hover {
   border-color: #2bffc6;
 }
@@ -374,6 +384,7 @@ z-index: 1;
 .logowidth {
   width: 40px;
 }
+
 .bgmusic:hover {
   background-color: #444444;
   border-radius: 5px;

@@ -1,17 +1,40 @@
 // Custom Componets
-import Banner from "../Components/Banner";
+import Banner from "../../Components/Banner";
 import { Dropdown } from "react-bootstrap";
 import "./Home.css";
+
 // React Bootstrap
-import { Container, Row, Col, ListGroup } from "react-bootstrap";
-import Playlist from "../Components/Playlist/Playlist";
+import { Container, Row, Col } from "react-bootstrap";
+import Playlist from "../../Components/Playlist/Playlist";
 
 const Home = () => {
+  const testimonials = [
+    {
+      profile: "assets/10031.png",
+      heading:
+        "FRM Offical became my band. FRM Offical is the reason why I'm getting back into music - I now have this second opportunity. Xwen 11",
+    },
+    {
+      profile: "assets/10032.png",
+      heading:
+        "It's incredible taking newly generated song ideas from FRM Offical that I'd never think of, and flipping them to create something I truly love. Lightfoot",
+    },
+    {
+      profile: "assets/10033.png",
+      heading:
+        "I love creating tracks to pair with AI-generated animations. I use my own vocals and the FRM Offical auto-vocal feature to try and find the perfect spot in the uncanny valley. Kier",
+    },
+    {
+      profile: "assets/10034.png",
+      heading:
+        "Jumping into a different sound, just not trying to sound like everybody. Stunna 4 Vegas",
+    },
+  ];
   return (
     <>
       <Banner />
       <Container className="testimonial">
-        <Row className="">
+        <Row>
           <Col>
             <h1 className="testamonialHeading">The RFM Effect</h1>
             <h4 className="testamonialSubHeading">
@@ -20,45 +43,20 @@ const Home = () => {
           </Col>
         </Row>
         <Row>
-          <div className="col-md-3">
-            <div>
-              <img src="assets/10031.png" height="250px" width="250px" alt="" />
-              <h5 className=" ">
-                "FRM Offical became my band. FRM Offical is the reason why I'm
-                getting back into music - I now have this second opportunity."
-                Xwen 11
-              </h5>
+          {testimonials.map((t) => (
+            <div key={t.profile} className="col-lg-3">
+              <Row className="align-items-center">
+                <img
+                  src={t.profile}
+                  className="col-xs-12 col-md-5 col-lg-12"
+                  height="250px"
+                  width="250px"
+                  alt=""
+                />
+                <h5 className="col-xs-12 col-md-7 col-lg-12">{t.heading}</h5>
+              </Row>
             </div>
-          </div>
-          <div className="col-md-3">
-            <div>
-              <img src="assets/10032.png" height="250px" width="250px" alt="" />
-              <h5>
-                "It's incredible taking newly generated song ideas from FRM
-                Offical that I'd never think of, and flipping them to create
-                something I truly love." Lightfoot
-              </h5>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div>
-              <img src="assets/10033.png" height="250px" width="250px" alt="" />
-              <h5>
-                "I love creating tracks to pair with AI-generated animations. I
-                use my own vocals and the FRM Offical auto-vocal feature to try
-                and find the perfect spot in the uncanny valley." Kier
-              </h5>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div>
-              <img src="assets/10034.png" height="250px" width="250px" alt="" />
-              <h5>
-                "Jumping into a different sound, just not trying to sound like
-                everybody." Stunna 4 Vegas
-              </h5>
-            </div>
-          </div>
+          ))}
         </Row>
         <div className="row my-5 gap-5 d-flex justify-content-center  ">
           <div className="col-lg-1 col-sm-2  col-3">
@@ -177,74 +175,79 @@ const Home = () => {
         </Row>
 
         <div className="row">
-          <h2 className="text-start">Featured songs</h2>
-          <div className="col-md-2 ">
-            <div className="d-flex justify-between gap-3">
-              <p className="mt-2">1</p>
-              <img src="assets/10028.jpg" alt="" className="w-25" />
-              <span className="font-weight-500 mt-2">#chill</span>
-            </div>
+          <div className="col-lg-6">
+            <h2 className="text-start">Featured songs</h2>
+            <div>
+              <div className="d-flex justify-between gap-3">
+                <p className="mt-2">1</p>
+                <img
+                  height={"50px"}
+                  width={"50px"}
+                  src="assets/10028.jpg"
+                  alt=""
+                />
+                <span className="font-weight-500 mt-2">#chill</span>
+              </div>
 
-            <div className="d-flex justify-between pt-2 gap-3">
-              <p className="mt-2">2</p>
-              <img src="assets/10029.jpg" alt="" className="w-25" />
-              <span className="font-weight-500 mt-2">#chill</span>
-            </div>
-            <div className="d-flex justify-between pt-2 gap-3">
-              <p className="mt-2">3</p>
-              <img src="assets/10030.jpg" alt="" className="w-25" />
-              <span className="font-weight-500 mt-2">#chill</span>
-            </div>
-            <div className="d-flex justify-between pt-2 gap-3">
-              <p className="mt-2">4</p>
-              <img src="assets/10027.jpg" alt="" className="w-25" />
-              <span className="font-weight-500 mt-2">#chill</span>
-            </div>
-            <div className="d-flex justify-between pt-2 gap-3">
-              <p className="mt-2">5</p>
-              <img src="assets/10026.jpg" alt="" className="w-25" />
-              <span className="font-weight-500 mt-2">#chill</span>
+              <div className="d-flex justify-between pt-2 gap-3">
+                <p className="mt-2">2</p>
+                <img
+                  height={"50px"}
+                  width={"50px"}
+                  src="assets/10029.jpg"
+                  alt=""
+                />
+                <span className="font-weight-500 mt-2">#chill</span>
+              </div>
+              <div className="d-flex justify-between pt-2 gap-3">
+                <p className="mt-2">3</p>
+                <img
+                  height={"50px"}
+                  width={"50px"}
+                  src="assets/10030.jpg"
+                  alt=""
+                />
+                <span className="font-weight-500 mt-2">#chill</span>
+              </div>
+              <div className="d-flex justify-between pt-2 gap-3">
+                <p className="mt-2">4</p>
+                <img
+                  height={"50px"}
+                  width={"50px"}
+                  src="assets/10027.jpg"
+                  alt=""
+                />
+                <span className="font-weight-500 mt-2">#chill</span>
+              </div>
+              <div className="d-flex justify-between pt-2 gap-3">
+                <p className="mt-2">5</p>
+                <img
+                  height={"50px"}
+                  width={"50px"}
+                  src="assets/10026.jpg"
+                  alt=""
+                />
+                <span className="font-weight-500 mt-2">#chill</span>
+              </div>
             </div>
           </div>
-          <div className="col-4"></div>
-          <div className="col-md-6 ">
+
+          <div className="col-lg-6 ">
             <h2 className="text-start">Featured songs</h2>
-            <div className="d-flex justify-content-between align-items-center px-3  bgmusic">
-              <div>
-                <h5>Waves</h5>
-                <p>Katirah</p>
+            {[1, 2, 3, 4].map((m) => (
+              <div
+                key={m}
+                className="d-flex justify-content-between align-items-center px-3  bgmusic"
+              >
+                <div>
+                  <h5 className="mb-0">Waves</h5>
+                  <p>Katirah</p>
+                </div>
+                <div>
+                  <p>02:06</p>
+                </div>
               </div>
-              <div>
-                <p>02:06</p>
-              </div>
-            </div>
-            <div className="d-flex justify-content-between align-items-center px-3  bgmusic">
-              <div>
-                <h5>Waves</h5>
-                <p>Katirah</p>
-              </div>
-              <div>
-                <p>02:06</p>
-              </div>
-            </div>{" "}
-            <div className="d-flex justify-content-between align-items-center px-3  bgmusic">
-              <div>
-                <h5>Waves</h5>
-                <p>Katirah</p>
-              </div>
-              <div>
-                <p>02:06</p>
-              </div>
-            </div>{" "}
-            <div className="d-flex justify-content-between align-items-center px-3  bgmusic">
-              <div>
-                <h5>Waves</h5>
-                <p>Katirah</p>
-              </div>
-              <div>
-                <p>02:06</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </Container>

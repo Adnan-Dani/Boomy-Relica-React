@@ -1,11 +1,10 @@
 import AppBar from "../Components/AppBar/AppBar";
 import { Outlet } from "react-router-dom";
 import Footer from "../Components/Footer/Footer";
-import Container from "react-bootstrap/Container";
 import background from "../assets/background.png";
+import { Container } from "react-bootstrap";
 
 const Layout = () => {
-  console.log(window.location.pathname);
   return (
     <>
       <div
@@ -21,6 +20,9 @@ const Layout = () => {
       >
         <AppBar />
         <Outlet />
+        <Container className="my-5">
+          <hr />
+        </Container>
         <Footer />
       </div>
     </>

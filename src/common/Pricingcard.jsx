@@ -1,4 +1,4 @@
-import "../Components/Pricing/pricing.css";
+import "../pages/Pricing/pricing.css";
 import { Button } from "react-bootstrap";
 export default function Pricingcard({ data, features }) {
   return (

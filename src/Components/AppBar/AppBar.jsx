@@ -1,7 +1,9 @@
 import Container from "react-bootstrap/Container";
 import { Button, NavDropdown, Navbar, Nav } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 function AppBar() {
+  // const
   return (
     <Navbar collapseOnSelect expand="lg">
       <Container>
@@ -15,36 +17,47 @@ function AppBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto mx-auto ">
-            {/* mx-auto for horizontal centering */}
-            <Nav.Link className="custom-hover fw-bold" href="#features">
+            <Nav.Link
+              as={NavLink}
+              to="/"
+              exact
+              activeClassName="active"
+              className="custom-hover fw-bold"
+            >
               Home
             </Nav.Link>
             <NavDropdown
-              className="fw-bold "
+              className="fw-bold custom-hover"
               title="Dropdown"
               id="collapsible-nav-dropdown"
             >
               <NavDropdown.Item
-                href="#action/3.1 "
+                as={NavLink}
+                to="/song"
                 className="navdropd mt-2 fw-bold"
               >
                 Song
               </NavDropdown.Item>
               <NavDropdown.Item
-                href="#action/3.2"
+                to="#"
+                as={NavLink}
                 className="navdropd mt-1 fw-bold"
               >
                 Release
               </NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link className="custom-hover fw-bold" href="/pricing ">
+            <Nav.Link
+              className="custom-hover fw-bold"
+              as={NavLink}
+              to="/pricing "
+            >
               Pricing
             </Nav.Link>
           </Nav>
           <Nav>
-            <Button className="mx-2 bg-none border-purple">Sign In</Button>
-            <Button className="bg-purple border-purple">Sign Up</Button>
+            <Button className="m-2 bg-none border-purple">Sign In</Button>
+            <Button className="m-2 bg-purple border-purple">Sign Up</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>

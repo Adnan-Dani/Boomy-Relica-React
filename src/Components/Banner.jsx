@@ -1,5 +1,5 @@
 import { Button } from "react-bootstrap";
-import "../pages/Home.css";
+import "./../pages/Home/Home.css";
 
 const Banner = () => {
   return (
