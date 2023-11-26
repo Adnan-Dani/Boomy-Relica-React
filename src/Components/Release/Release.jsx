@@ -1,7 +1,11 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 const Release = () => {
-  return <div>Release</div>;
+  const location = useLocation();
+  const data = location.state?.data;
+  console.log(data)
+  return (<div>Release</div>);
 };
 
 export default Release;

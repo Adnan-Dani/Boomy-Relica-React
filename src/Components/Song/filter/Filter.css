@@ -1,0 +1,72 @@
+.CrossButton {
+    background-color: transparent;
+    border: none;
+    color: #D5CFF5;
+    padding:10px;
+    border-radius: 5px;
+  }
+  .CrossButton:hover {
+    background-color: #100D1C;
+
+    border: none;
+  }
+  .CrossButton:focus {
+    background-color: #100D1C;
+    border: none;
+  }
+  .box {
+    width: 50%;
+  }
+  .Title {
+    padding-left: 0 !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #f2eeff;
+  }
+  .SubTitile {
+    margin-top: 20px !important;
+    font-style: normal;
+  
+    font-size: 20px;
+    color: #f2eeff;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+.selectedTitles{
+    font-size: 20px;
+    color: #f2eeff;
+    letter-spacing: 0.02em;
+    line-height: 20px;    font-style: normal;
+    font-weight: 400;
+}
+.contentTitle{
+    text-transform: uppercase!important;
+    color: #8f7af0;
+    font-size: 10px;
+    font-weight: 600;
+    background-color: rgb(26, 22, 50);
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+.contentTitle:hover{
+background-color: #2C2842;
+    cursor: pointer;
+}
+.list{
+    padding: 10px 0px;
+    border-bottom: 2px solid #312E3E;
+
+}
+.createSong{
+    background-color: #6139b8;
+    border-color: #6139b8;
+    color: white;
+    font-weight: 700;
+    padding:10px;
+    border-radius: 5px;
+}
+.createSong:hover{
+    background-color: #6D49BE;
+}

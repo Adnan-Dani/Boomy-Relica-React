@@ -11,8 +11,12 @@ import electronicSvg from "../../assets/electronicSvg.svg";
 import rightArrow from "../../assets/rightArrow.svg";
 import { ReactSVG } from "react-svg";
 import { FaPlay } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import background from "../../assets/background.png"
 
 const Songs = () => {
+  const path =  location.pathname
+  const navigate = useNavigate();
   const cardsData = [
     {
       title: "Electronic Dance",
@@ -51,9 +55,15 @@ const Songs = () => {
       icon: custom,
     },
   ];
+  const handleCardClick = (index) => {
+    navigate('/filter', { state: { data: cardsData[index] } });
+  };
+
+
   return (
     <>
-      <Container className="d-flex justify-content-center">
+    <div style={{background:`url(${background})`, backgroundSize:"cover"}}>
+      <Container className="d-flex justify-content-center" >
         <div className="box">
           <div className="d-flex justify-content-between align-items-center ">
             <div className="Title">Create a song</div>
@@ -66,8 +76,8 @@ const Songs = () => {
             Start by choosing the instrumental style of your song
           </div>
           <Row className="d-flex justify-content-center">
-            {cardsData.map((data) => (
-              <Col lg={6} xs={12} className="my-1">
+            {cardsData.map((data, index) => (
+              <Col lg={6} xs={12} className="my-1" onClick={() => handleCardClick(index)}>
                 <div className="card ">
                   <div className="d-flex h-100 ">
                     <div className="align-self-center m-3">
@@ -89,10 +99,12 @@ const Songs = () => {
                   <div className="preview">Preview</div>
                 </div>
               </Col>
+           
             ))}
           </Row>
         </div>
       </Container>
+      </div>
     </>
   );
 };

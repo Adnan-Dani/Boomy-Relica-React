@@ -1,51 +1,47 @@
 .mobile-nav {
-  background: black;
-  position: fixed;
-  bottom: 0;
-  height: 65px;
-  width: 100vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  overflow: hidden !important;
-  z-index: 1;
+    background: black;
+    position: fixed;
+    bottom: 0;
+    height: 65px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden !important;
+    z-index: 1;
 }
 
 .bloc-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 a {
-  text-decoration: none;
+    text-decoration: none;
 
 }
-
-.IsActive {
-  border-bottom: 5px solid #f81b55;
-
+ .IsActive{
+    border-bottom: 5px solid #f81b55;
+   
 }
-
-a div {
+a div{
   font-size: medium;
 }
-
-.createAnchor {
-  position: relative;
-}
-
-.CreateDropdown {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: absolute;
-  top: -85px;
-  z-index: 5;
-}
-
-.CreateDropdown Button {
-  width: 100px;
-  margin: 5px;
-}
+ .createAnchor {
+    position: relative;
+  }
+  
+  .CreateDropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute; /* or relative, depending on your layout needs */
+    top: -85px;
+    z-index: 5; /* adjust this value as needed */
+  }
+  .CreateDropdown  Button{
+   width: 100px;
+   margin: 5px;
+  }
+   

@@ -31,7 +31,7 @@ const Banner = () => {
               Join a global community of artists empowered by generative music
             </div>
           </li>
-          <li className="list-item mt-5">
+          <li className="list-item mt-lg-5 mt-0">
             <Button className="bg-purple border-purple">
               Create your song{" "}
             </Button>

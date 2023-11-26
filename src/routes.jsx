@@ -3,7 +3,9 @@ import Layout from "./layout/Layout";
 import Home from "./pages/Home/Home";
 import Pricing from "./pages/Pricing/Pricing";
 import Songs from "./Components/Song/Songs";
+import Filter from "./Components/Song/filter/Filter";
 import Release from "./Components/Release/Release";
+import Edit from "./Components/Song/Edit/Edit";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,17 @@ const router = createBrowserRouter([
         element: <Songs />,
         name: "Song",
       },
+      {
+        path: "filter",
+        element: <Filter />,
+        name: "Filter",
+      },
+      {
+        path: "edit",
+        element: <Edit />,
+        name: "Edit",
+      },
+  
       {
         path: "release",
         element: <Release />,

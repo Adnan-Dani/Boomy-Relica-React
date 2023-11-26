@@ -11,6 +11,9 @@ const Footer = () => {
   }, [location.pathname]);
   return (
     <footer style={{ backgroundColor:  ` ${path === "/" ? "black": ""}`}}>
+        <Container  >
+          <hr />
+        </Container>
       <Container>
         <h2>RFM Official</h2>
         <h5>
