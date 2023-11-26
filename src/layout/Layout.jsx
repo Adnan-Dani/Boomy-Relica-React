@@ -8,22 +8,23 @@ const Layout = () => {
   return (
     <>
       <div
-        style={{
-          background:
-            window.location.pathname === "/pricing" ||
-            window.location.pathname === "/song"
-              ? `url(${background})`
-              : "",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-        }}
+        // style={{
+        //   background:
+        //     window.location.pathname === "/pricing" ||
+        //     window.location.pathname === "/song"
+        //       ? `url(${background})`
+        //       : "",
+        //   backgroundRepeat: "no-repeat",
+        //   backgroundSize: "cover",
+        //   height:"100vh"
+        // }}
       >
         <AppBar />
         <Outlet />
-        <Container className="my-5">
+        {/* <Container className="my-5">
           <hr />
         </Container>
-        <Footer />
+        <Footer /> */}
       </div>
     </>
   );

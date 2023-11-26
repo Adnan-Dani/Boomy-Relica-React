@@ -30,7 +30,8 @@ function AppBar() {
             </Nav.Link>
             <NavDropdown
               className="fw-bold custom-hover"
-              title="Dropdown"
+              title="Create"
+              activeClassName="active"
               id="collapsible-nav-dropdown"
             >
               <NavDropdown.Item

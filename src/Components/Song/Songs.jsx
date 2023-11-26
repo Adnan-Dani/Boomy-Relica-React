@@ -62,7 +62,7 @@ const Songs = () => {
 
   return (
     <>
-    <div style={{background:`url(${background})`, backgroundSize:"cover"}}>
+    <div style={{background:`url(${background})`, backgroundSize:"cover", height:"100vh"}}>
       <Container className="d-flex justify-content-center" >
         <div className="box">
           <div className="d-flex justify-content-between align-items-center ">
