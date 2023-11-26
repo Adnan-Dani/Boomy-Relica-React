@@ -31,6 +31,11 @@ const MobileBar = () => {
             Lyrics
           </Button>
           </Link>
+          <Link to={ "/videopage"}>
+          <Button className="RedirectButtons">
+            Video
+          </Button>
+          </Link>
         </div>
       )
     }
@@ -42,10 +47,10 @@ const MobileBar = () => {
   Home
 </div>
       </a> 
-      <a   className={` bloc-icon d-flex flex-column ${path === "/song" || path === "/release" || path === "/lyrics" ? "IsActive" : ""}`}  onClick={() => setDropdown(!dropdown)}>
-     < FaPlusSquare size={25}  color={path === "/song" || path === "/release"  || path === "/lyrics"  ? "#f81b55": "#c5cae9"} />
+      <a   className={` bloc-icon d-flex flex-column ${path === "/song" || path === "/release" || path === "/lyrics" || path === "/videopage" ? "IsActive" : ""}`}  onClick={() => setDropdown(!dropdown)}>
+     < FaPlusSquare size={25}  color={path === "/song" || path === "/release"  || path === "/lyrics" || path === "/videopage"  ? "#f81b55": "#c5cae9"} />
      
-     <div style={{ color: path === "/song" || path === "/release"  || path === "/lyrics"   ? "#f81b55" : "#c5cae9" }}>
+     <div style={{ color: path === "/song" || path === "/release"  || path === "/lyrics" || path === "/videopage"   ? "#f81b55" : "#c5cae9" }}>
   Create
 </div>
    
