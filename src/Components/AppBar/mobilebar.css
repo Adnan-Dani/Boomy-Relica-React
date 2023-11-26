@@ -8,7 +8,7 @@
     justify-content: space-around;
     align-items: flex-end;
     overflow: hidden !important;
-    z-index: 1;
+    z-index: 20;
 }
 
 .bloc-icon {

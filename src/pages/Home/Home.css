@@ -133,6 +133,8 @@
   .PlayList{
     margin-bottom: -500px;
     margin-top: 300px;
+    position: relative;
+    z-index: 1 !important;
   }
 }
 @media only screen and (max-width: 768px) {

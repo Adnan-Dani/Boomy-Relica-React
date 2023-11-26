@@ -149,18 +149,18 @@ const Home = () => {
         <Row className="pb-5" >
     
           <div className="row">
-            <div className="col-md-10 col-6 ">
+            <div className="col-md-10 col-6  ">
               <form className="d-flex">
                 <input
                   className="form-control bg-transparent text-white me-2"
                   type="search"
                   placeholder="Search Song"
                   aria-label="Search"
-                 style={{width:"100vw"}}
+                 style={{width:"100%"}}
                 />
               </form>
             </div>
-            <div className="col-md-2 col-6">
+            <div className="col-md-2 col-5">
               <Dropdown>
                 <Dropdown.Toggle
                   className="dropdsearch"
@@ -171,9 +171,9 @@ const Home = () => {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#action/1">Option 1</Dropdown.Item>
-                  <Dropdown.Item href="#action/2">Option 2</Dropdown.Item>
-                  <Dropdown.Item href="#action/3">Option 3</Dropdown.Item>
+                  <Dropdown.Item href="#action/1">Artist</Dropdown.Item>
+                  <Dropdown.Item href="#action/2">Song Title</Dropdown.Item>
+                  <Dropdown.Item href="#action/3">Date created</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </div>
