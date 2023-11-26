@@ -56,7 +56,13 @@
 .LikedForMd{
   display:none;
 }
-
+.testamonialImageHeading{
+  font-size: 20px;
+  color:#f2eeff;
+  word-wrap: break-word;
+  line-height: 1.5;
+  font-weight: 400;
+}
 
 @media only screen and (max-width: 992px) {
   .Header {
@@ -64,6 +70,22 @@
     font-weight: 700;
    line-height: normal;
     
+  }
+  .testamonialImage{
+    height: 100px !important;
+    width: 100px !important;
+  }
+  .testamonialImageHeading{
+    font-size: 13px;
+    width: 60%;
+  color:#f2eeff;
+  word-wrap: break-word;
+  line-height: 1.5;
+  font-weight: 400;
+  }
+  .TestamonialMain{
+    display: flex;
+    justify-content: space-around;
   }
 .list-unstyle {
   margin-top: 3px;

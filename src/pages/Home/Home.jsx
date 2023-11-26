@@ -5,6 +5,7 @@ import "./Home.css";
 // React Bootstrap
 import { Container, Row, Col } from "react-bootstrap";
 import Playlist from "../../Components/Playlist/Playlist";
+import Footer from "../../Components/Footer/Footer";
 
 const Home = () => {
   const testimonials = [
@@ -43,17 +44,17 @@ const Home = () => {
           </Col>
         </Row>
         <Row>
-          {testimonials.map((t) => (
+          {testimonials.map((t,index) => (
             <div key={t.profile} className="col-lg-3">
-              <Row className="align-items-center">
+              <Row className="align-items-center TestamonialMain my-3">
                 <img
                   src={t.profile}
-                  className="col-xs-12 col-md-5 col-lg-12"
+                  className={`col-3 col-lg-12 testamonialImage ${index === 1 || index === 3 ? "order-lg-1 order-2": ""}`}
                   height="250px"
                   width="250px"
                   alt=""
                 />
-                <h5 className="col-xs-12 col-md-7 col-lg-12">{t.heading}</h5>
+                <h6 className={` col-9 col-lg-12 testamonialImageHeading  ${index === 1 || index === 3 ? "order-lg-1 order-1": ""}`}>"{t.heading}</h6>
               </Row>
             </div>
           ))}
@@ -256,7 +257,9 @@ const Home = () => {
           </div>
         </div>
       </Container>
+      
       </div>
+      <Footer />
     </>
   );
 };

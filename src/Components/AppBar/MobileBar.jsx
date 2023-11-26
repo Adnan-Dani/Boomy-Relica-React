@@ -12,7 +12,28 @@ const MobileBar = () => {
   const path =  location.pathname
   const [dropdown, setDropdown] = useState(false)
   return (
-    <nav className="mobile-nav d-lg-none" >
+    <nav className={`mobile-nav d-lg-none ${dropdown ? "NavFix" : ""} `} >
+       {
+      dropdown && (
+        <div className={`CreateDropdown  ${dropdown ? "CreateDropdownFix": "" }  `}>
+          <Link to={ "/song"} >
+          <Button className="RedirectButtons">
+            Song
+          </Button>
+          </Link>
+          <Link to={ "/release"}>
+          <Button className="RedirectButtons">
+            Release
+          </Button>
+          </Link>
+          <Link to={ "/lyrics"}>
+          <Button className="RedirectButtons">
+            Lyrics
+          </Button>
+          </Link>
+        </div>
+      )
+    }
   <a href="/" className={`bloc-icon d-flex flex-column ${path === "/" ? "IsActive" : ""}`}>
 
       <IoMdHome size={25} color={path === "/" ? "#f81b55": "#c5cae9"} />
@@ -21,28 +42,13 @@ const MobileBar = () => {
   Home
 </div>
       </a> 
-      <a   className={` bloc-icon d-flex flex-column ${path === "/song" || path === "/release" ? "IsActive" : ""}`}  onClick={() => setDropdown(!dropdown)}>
-     < FaPlusSquare size={25}  color={path === "/song" || path === "/release" ? "#f81b55": "#c5cae9"} />
+      <a   className={` bloc-icon d-flex flex-column ${path === "/song" || path === "/release" || path === "/lyrics" ? "IsActive" : ""}`}  onClick={() => setDropdown(!dropdown)}>
+     < FaPlusSquare size={25}  color={path === "/song" || path === "/release"  || path === "/lyrics"  ? "#f81b55": "#c5cae9"} />
      
-     <div style={{ color: path === "/song" ? "#f81b55" : "#c5cae9" }}>
+     <div style={{ color: path === "/song" || path === "/release"  || path === "/lyrics"   ? "#f81b55" : "#c5cae9" }}>
   Create
 </div>
-    {
-      dropdown && (
-        <div className="CreateDropdown">
-          <Link to={ "/song"} >
-          <Button>
-            Song
-          </Button>
-          </Link>
-          <Link to={ "/release"}>
-          <Button>
-            Release
-          </Button>
-          </Link>
-        </div>
-      )
-    }
+   
         
       </a>
       <a href="/pricing" className={`bloc-icon d-flex flex-column ${path ==="/pricing"? "IsActive" : ""}`}>

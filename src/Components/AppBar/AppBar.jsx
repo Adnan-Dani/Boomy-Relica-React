@@ -42,11 +42,25 @@ function AppBar() {
                 Song
               </NavDropdown.Item>
               <NavDropdown.Item
-                to="#"
+                to="/release"
                 as={NavLink}
                 className="navdropd mt-1 fw-bold"
               >
                 Release
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                to="/lyrics"
+                as={NavLink}
+                className="navdropd mt-1 fw-bold"
+              >
+                Lyrics
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                to="/videopage"
+                as={NavLink}
+                className="navdropd mt-1 fw-bold"
+              >
+                Video 
               </NavDropdown.Item>
             </NavDropdown>
 

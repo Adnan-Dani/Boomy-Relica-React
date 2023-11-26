@@ -11,10 +11,10 @@ const Footer = () => {
   }, [location.pathname]);
   return (
     <footer style={{ backgroundColor:  ` ${path === "/" ? "black": ""}`}}>
-        <Container  >
-          <hr />
-        </Container>
+  
+       
       <Container>
+        <hr />
         <h2>RFM Official</h2>
         <h5>
           RFM Official artists have created <span>18,082,786</span> original

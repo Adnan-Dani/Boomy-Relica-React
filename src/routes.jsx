@@ -6,6 +6,8 @@ import Songs from "./Components/Song/Songs";
 import Filter from "./Components/Song/filter/Filter";
 import Release from "./Components/Release/Release";
 import Edit from "./Components/Song/Edit/Edit";
+import Lyrics from "./pages/Lyrics/Lyrics";
+import VideoPage from "./pages/VideoPage/VideoPage";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +44,16 @@ const router = createBrowserRouter([
         path: "release",
         element: <Release />,
         name: "Release",
+      },
+      {
+        path: "lyrics",
+        element: <Lyrics />,
+        name: "Lyrics",
+      },
+      {
+        path: "videopage",
+        element: <VideoPage />,
+        name: "videopage",
       },
     ],
   },

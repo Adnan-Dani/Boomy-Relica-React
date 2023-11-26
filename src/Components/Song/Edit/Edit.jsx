@@ -55,7 +55,7 @@ export default function Edit() {
     
   return (
    <>
-   <div style={{background:`url(${background})`, backgroundSize:"cover", height:"100vh"}}>
+   <div style={{background:`url(${background})`, backgroundSize:"cover", height:"100vh "}}>
      <Container className="d-flex justify-content-center" >
         <div className="box">
           <div className="d-flex justify-content-between align-items-center ">
@@ -70,6 +70,11 @@ export default function Edit() {
             <button className="CrossButton">
               <RxCross2 />
             </button>
+          </div>
+          <div>
+            <div>New Song</div>
+            <div>by</div>
+            <div>New Artist</div>
           </div>
         </div>
       </Container>
