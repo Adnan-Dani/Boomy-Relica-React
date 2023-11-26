@@ -99,7 +99,7 @@ export default function Filter() {
             ))}
             </ul>
             <div className='d-flex justify-content-end'>
-            <button className='createSong' onClick={handleCardClick} >
+            <button className='createSong'  >
                 Create Song
             </button>
             </div>

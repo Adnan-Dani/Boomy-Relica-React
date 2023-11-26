@@ -1,10 +1,15 @@
+import React,{useState} from "react";
 import Container from "react-bootstrap/Container";
 import { Button, NavDropdown, Navbar, Nav } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import MobileBar from "./MobileBar";
+import { FaPlusSquare } from "react-icons/fa";
+import { IoIosRocket } from "react-icons/io";
+import { IoMdHome } from "react-icons/io";
 
 function AppBar() {
-  // const
+  const path = location.pathname;
+  const [dropdown, setDropdown] = useState(false)
   return (
     <Navbar collapseOnSelect expand="lg">
       <MobileBar />
@@ -18,59 +23,67 @@ function AppBar() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto mx-auto ">
-            <Nav.Link
-              as={NavLink}
-              to="/"
-              exact
-              activeClassName="active"
-              className="custom-hover fw-bold"
-            >
-              Home
-            </Nav.Link>
-            <NavDropdown
-              className="fw-bold custom-hover"
-              title="Create"
-              activeClassName="active"
-              id="collapsible-nav-dropdown"
-            >
-              <NavDropdown.Item
-                as={NavLink}
-                to="/song"
-                className="navdropd mt-2 fw-bold"
-              >
-                Song
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                to="/release"
-                as={NavLink}
-                className="navdropd mt-1 fw-bold"
-              >
-                Release
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                to="/lyrics"
-                as={NavLink}
-                className="navdropd mt-1 fw-bold"
-              >
-                Lyrics
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                to="/videopage"
-                as={NavLink}
-                className="navdropd mt-1 fw-bold"
-              >
-                Video 
-              </NavDropdown.Item>
-            </NavDropdown>
-
-            <Nav.Link
-              className="custom-hover fw-bold"
-              as={NavLink}
-              to="/pricing "
-            >
-              Pricing
-            </Nav.Link>
+          <Nav className="me-auto mx-auto navLinks">
+            <a href={"/"} className="mx-2">
+              <div className={`Links ${path === "/" ? "IsNavActive" : ""}`}>
+              <IoMdHome
+                size={25}
+                color={path === "/" ? "#f81b55" : "#c5cae9"}
+                style={{marginTop:"-3px"}}
+              />
+              <button className="AppbarLinks mx-2" style={{ color: path === "/" ? "#f81b55" : "#c5cae9" }}>Home</button>
+              </div>
+            </a>
+            <a className={`mx-2  ${path === "/song" || path === "/videopage" || path === "/lyrics" || path === "/videopage" ? "IsNavActive" : ""} `} style={{position:"relative"}}  onClick={()=>setDropdown(!dropdown)}>
+              <div className={`Links`}>
+              <FaPlusSquare
+                color={
+                  path === "/song" ||
+                  path === "/release" ||
+                  path === "/lyrics" ||
+                  path === "/videopage"
+                    ? "#f81b55"
+                    : "#c5cae9"
+                }
+              />
+              <button className="AppbarLinks mx-2"  style={{  color: path === "/song" || path === "/release"  || path === "/lyrics" || path === "/videopage"   ? "#f81b55" : "#c5cae9" }}>Create</button>
+              </div>
+            </a>
+            {
+      dropdown && (
+        <div className={`AppbarDropdown  ${dropdown ? "CreateDropdownFix": "" }  `}>
+          <Link to={ "/song"} >
+          <Button className="RedirectButtonsAppbar" onClick={()=> setDropdown(!dropdown)}>
+            Song
+          </Button>
+          </Link>
+          {/* <Link to={ "/release"}>
+          <Button className="RedirectButtons">
+            Release
+          </Button>
+          </Link> */}
+          <Link to={ "/lyrics"}  onClick={()=> setDropdown(!dropdown)}>
+          <Button className="RedirectButtonsAppbar">
+            Lyrics
+          </Button>
+          </Link>
+          <Link to={ "/videopage"}  onClick={()=> setDropdown(!dropdown)}>
+          <Button className="RedirectButtonsAppbar">
+            Video
+          </Button>
+          </Link>
+        </div>
+      )
+    }
+            <a href={"/pricing"} className={`mx-2`}>
+              <div className= {`Links ${path ==="/pricing"? "IsNavActive" : ""}`}>
+              <IoIosRocket
+                size={25}
+                color={path === "/pricing" ? "#f81b55" : "#c5cae9"}
+              />
+              <button className="AppbarLinks mx-2" style={{ color: path === "/pricing" ? "#f81b55" : "#c5cae9" }} >Pricing</button>
+              </div>
+            </a>
           </Nav>
           <Nav>
             <Button className="m-2 bg-none border-purple">Sign In</Button>

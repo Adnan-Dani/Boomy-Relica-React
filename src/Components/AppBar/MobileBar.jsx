@@ -21,11 +21,11 @@ const MobileBar = () => {
             Song
           </Button>
           </Link>
-          <Link to={ "/release"}>
+          {/* <Link to={ "/release"}>
           <Button className="RedirectButtons">
             Release
           </Button>
-          </Link>
+          </Link> */}
           <Link to={ "/lyrics"}>
           <Button className="RedirectButtons">
             Lyrics

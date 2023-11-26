@@ -30,7 +30,20 @@ a div{
  .createAnchor {
     position: relative;
   }
-  
+
+
+  .AppbarLinks{
+    background-color: transparent;
+    color: white;
+    line-height: 1.2;
+    font-size: 14px;
+    padding-top: 3px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    border: none;
+   
+  }
+
   .CreateDropdown {
     display: flex;
     justify-content: center;
@@ -45,7 +58,7 @@ a div{
    margin: 5px;
   }
    .NavFix{
-    height: 240px !important;
+    height: 200px !important;
    }
 .RedirectButtons{
   background-color: #6139B8;

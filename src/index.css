@@ -24,11 +24,39 @@ body {
   overflow-x: hidden;
 
 }
+.AppbarDropdown{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute; 
+  top:50px;
+margin-left: 130px;
+  z-index: 999; 
+}
+.RedirectButtonsAppbar{
+  margin: 3px 0px;
+  background-color: #484455;
+  padding: 3px 21px;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+.RedirectButtonsAppbar:hover{
 
+  background-color: #413E4D;
+
+}
+.Links{
+padding: 10px;
+}
 .bg-purple {
   background-color: var(--var-purple);
 }
-
+.IsNavActive{
+  border-top: 5px solid #f81b55;
+ margin-top: -4px;
+}
 .border-purple {
   border-color: var(--var-purple);
 }
