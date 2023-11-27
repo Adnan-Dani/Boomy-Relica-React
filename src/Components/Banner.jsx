@@ -5,35 +5,36 @@ const Banner = () => {
   return (
     <div className="header-wrapper">
       <div className="text-center">
-        <h1 className="Header">Unleash your creativity</h1>
-        <h1 className="Header">Make music with RFM Official</h1>
+        <h1 className="Header">
+Let's harmonize with RFM Official</h1>
+        <h1 className="Header">To create a musical masterpiece</h1>
         <ul className="list-unstyle">
           <li className="list-item">
             <div> 🎶</div>
             <div>
               {" "}
-              Create original songs in seconds, even if you've never made music
-              before
+            
+Craft unique melodies instantly, regardless of your musical experience.
             </div>
           </li>
           <li className="list-item">
             <div> 🌐</div>
             <div>
               {" "}
-              Submit your songs to streaming platforms and get paid when people
-              listen{" "}
+             
+Share your compositions on streaming platforms and earn royalties for every listener.{" "}
             </div>
           </li>
           <li className="list-item">
             <div> 💜</div>{" "}
             <div>
               {" "}
-              Join a global community of artists empowered by generative music
+              Become part of a worldwide network of artists empowered by generative music.
             </div>
           </li>
           <li className="list-item mt-lg-5 mt-0">
             <Button className="bg-purple border-purple">
-              Create your song{" "}
+            Compose your own music{" "}
             </Button>
           </li>
         </ul>

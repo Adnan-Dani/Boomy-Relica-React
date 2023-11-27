@@ -12,22 +12,22 @@ const Home = () => {
     {
       profile: "assets/10031.png",
       heading:
-        "FRM Offical became my band. FRM Offical is the reason why I'm getting back into music - I now have this second opportunity. Xwen 11",
+        "It's incredible how RFM Official has become my musical haven. Thanks to them, I've rediscovered my passion for music—a second chance to dive into what I love.. Xwen 11",
     },
     {
       profile: "assets/10032.png",
       heading:
-        "It's incredible taking newly generated song ideas from FRM Offical that I'd never think of, and flipping them to create something I truly love. Lightfoot",
+        " It's amazing how RFM Official generates song ideas I'd never have thought of, and then I transform them into something I genuinely adore. Lightfoot",
     },
     {
       profile: "assets/10033.png",
       heading:
-        "I love creating tracks to pair with AI-generated animations. I use my own vocals and the FRM Offical auto-vocal feature to try and find the perfect spot in the uncanny valley. Kier",
+        " I adore crafting tracks to complement AI-generated animations. Combining my vocals with RFM Official's auto-vocal feature helps me navigate the intriguing realm of the uncanny valley, seeking the perfect balance. Kier",
     },
     {
       profile: "assets/10034.png",
       heading:
-        "Jumping into a different sound, just not trying to sound like everybody. Stunna 4 Vegas",
+        " Exploring a unique sound, steering clear of the usual echoes in the crowd. Stunna 4 Vegas",
     },
   ];
   return (
@@ -39,7 +39,8 @@ const Home = () => {
           <Col>
             <h1 className="testamonialHeading">The RFM Effect</h1>
             <h4 className="testamonialSubHeading">
-              How people are using FRM Offical to empower their creativity
+             
+People are leveraging RFM Official to fuel and amplify their creative potential.
             </h4>
           </Col>
         </Row>
