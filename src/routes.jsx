@@ -14,13 +14,13 @@ import Comingsoon from "./pages/ComingSoon/comingsoon";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Login />,
-    name: "Login",
-  },
-  {
-    path: "/comingsoon",
     element: <Comingsoon />,
     name: "Coming Soon",
+  },
+  {
+    path: "/login",
+    element: <Login />,
+    name: "Login",
   },
   {
     path: "/dashboard",

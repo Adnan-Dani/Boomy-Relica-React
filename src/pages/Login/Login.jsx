@@ -31,7 +31,7 @@ const Login = () => {
               <button
                 className="LoginButton"
                 style={{ color: "white", fontWeight: "900" }}
-                onClick={() => navigate("/comingsoon")}
+                onClick={() => navigate("/dashboard")}
               >
                 Sign In
               </button>
