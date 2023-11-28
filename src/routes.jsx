@@ -8,10 +8,22 @@ import Release from "./Components/Release/Release";
 import Edit from "./Components/Song/Edit/Edit";
 import Lyrics from "./pages/Lyrics/Lyrics";
 import VideoPage from "./pages/VideoPage/VideoPage";
+import Login from "./pages/Login/Login";
+import Comingsoon from "./pages/ComingSoon/comingsoon";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <Login />,
+    name: "Login",
+  },
+  {
+    path: "/comingsoon",
+    element: <Comingsoon />,
+    name: "Coming Soon",
+  },
+  {
+    path: "/dashboard",
     element: <Layout />,
     children: [
       {
@@ -39,7 +51,7 @@ const router = createBrowserRouter([
         element: <Edit />,
         name: "Edit",
       },
-  
+
       {
         path: "release",
         element: <Release />,

@@ -166,8 +166,9 @@ const Pricing = () => {
         </div>
         <div className=" pricingDescription">
           <p>
-            Unleash your creativity with AI! FRM Offical offers three membership
-            options to support your goals from creation to distribution.
+            RFM Official presents three membership choices designed to aid you
+            in achieving your objectives, covering everything from creation to
+            distribution.
           </p>
         </div>
 

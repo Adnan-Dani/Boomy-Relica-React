@@ -1,0 +1,27 @@
+.img {
+  border-radius: 10px;
+}
+.cardHeadings {
+  font-weight: 800;
+  margin: 40px 0px;
+}
+.title {
+  font-weight: 700;
+  font-family: sans-serif;
+  font-size: x-large;
+  margin: 10px 0px;
+}
+.description {
+  font-weight: 300;
+  font-family: sans-serif;
+  font-size: small;
+  width: 200px;
+  margin: 5px auto;
+  line-height: 1.5;
+}
+.featuresCard {
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+  padding: 10px;
+  height: 400px;
+}

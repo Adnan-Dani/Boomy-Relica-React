@@ -1,0 +1,61 @@
+.LoginPageOuterDiv {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.LoginBox {
+  width: 400px;
+  height: 500px;
+  background-color: #1b1b24;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcomeText {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  font-family: sans-serif;
+  font-style: normal;
+  color: #f2eeff;
+  font-weight: 700;
+}
+.Input {
+  width: 250px !important;
+  height: 30px !important;
+  background-color: #1b1b24 !important;
+  border: 2px solid #3a3d4c !important;
+  border-radius: 5px !important;
+  margin: 10px 0px !important;
+}
+.LoginButton {
+  width: 100%;
+  background: rgb(97, 57, 184);
+  color: rgb(242, 238, 255);
+  width: 250px !important;
+  height: 35px !important;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: small;
+  line-height: 24px;
+  border: none;
+  cursor: pointer;
+  color: #1f1f1f;
+  margin: 10px 0px;
+}
+.SignInWith {
+  margin: 0px 8px;
+}
+.OR {
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: small;
+}
