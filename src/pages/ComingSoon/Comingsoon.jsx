@@ -16,7 +16,7 @@ const Comingsoon = () => {
         <div className="d-flex align-items-center mx-3">
           {" "}
           <img src="assets/logo.jpg" alt="" className="logowidth" />
-          <h3 className="my-4 mx-3"> RFM Offical </h3>
+          <h3 className="my-4 mx-3"> RFM OFFICIAL </h3>
         </div>
         <div className="MainOuterDiv">
           <h1>Coming Soon</h1>

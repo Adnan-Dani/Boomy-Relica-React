@@ -19,7 +19,7 @@ function AppBar() {
           className="text-white d-flex gap-2 align-items-center"
         >
           <img src="assets/logo.jpg" alt="" className="logowidth" />
-          <h3 className=""> RFM Offical </h3>
+          <h3 className=""> RFM OFFICIAL </h3>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
