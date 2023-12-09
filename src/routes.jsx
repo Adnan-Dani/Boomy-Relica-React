@@ -18,52 +18,52 @@ const router = createBrowserRouter([
     name: "Coming Soon",
   },
   {
-    path: "/login",
-    element: <Login />,
-    name: "Login",
-  },
-  {
-    path: "/dashboard",
+    path: "/",
     element: <Layout />,
     children: [
       {
-        index: true,
+        path: "/dashboard",
         element: <Home />,
         name: "Dashboard",
       },
       {
-        path: "pricing",
+        path: "/login",
+        element: <Login />,
+        name: "Login",
+      },
+      {
+        path: "dashboard/pricing",
         element: <Pricing />,
         name: "Pricing",
       },
       {
-        path: "song",
+        path: "dashboard/song",
         element: <Songs />,
         name: "Song",
       },
       {
-        path: "filter",
+        path: "dashboard/filter",
         element: <Filter />,
         name: "Filter",
       },
       {
-        path: "edit",
+        path: "dashboard/edit",
         element: <Edit />,
         name: "Edit",
       },
 
       {
-        path: "release",
+        path: "dashboard/release",
         element: <Release />,
         name: "Release",
       },
       {
-        path: "lyrics",
+        path: "dashboard/lyrics",
         element: <Lyrics />,
         name: "Lyrics",
       },
       {
-        path: "videopage",
+        path: "dashboard/videopage",
         element: <VideoPage />,
         name: "videopage",
       },

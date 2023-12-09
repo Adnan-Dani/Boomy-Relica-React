@@ -4,7 +4,6 @@ import Accordion from "react-bootstrap/Accordion";
 import Pricingcard from "./../../common/Pricingcard";
 import { TiTick } from "react-icons/ti";
 import { RxCross2 } from "react-icons/rx";
-import Footer from "../../Components/Footer/Footer";
 
 const Pricing = () => {
   const accordionData = [
@@ -184,7 +183,7 @@ const Pricing = () => {
           </Col>
         </Row>
 
-        <h1 className="mb-5">Questions?We're here to help </h1>
+        <h1 className="mb-5">Questions? We're here to help </h1>
         <Accordion defaultActiveKey="0">
           {accordionData.map((data) => (
             <Accordion.Item

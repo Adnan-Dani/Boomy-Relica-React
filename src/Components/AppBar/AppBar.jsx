@@ -140,7 +140,9 @@ function AppBar() {
             </a>
           </Nav>
           <Nav>
-            <Button className="m-2 bg-none border-purple">Sign In</Button>
+            <Link to="/login">
+              <Button className="m-2 bg-none border-purple">Sign In</Button>
+            </Link>
             <Button className="m-2 bg-purple border-purple">Sign Up</Button>
           </Nav>
         </Navbar.Collapse>
