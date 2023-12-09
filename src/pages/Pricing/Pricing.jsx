@@ -5,7 +5,7 @@ import Pricingcard from "./../../common/Pricingcard";
 import { TiTick } from "react-icons/ti";
 import { RxCross2 } from "react-icons/rx";
 
-const Pricing = () => {
+const PricingPage = () => {
   const accordionData = [
     {
       title: "How can I see my streaming numbers?",
@@ -205,4 +205,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default PricingPage;

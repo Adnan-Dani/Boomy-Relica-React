@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Container from "react-bootstrap/Container";
-import { Button, NavDropdown, Navbar, Nav } from "react-bootstrap";
-import { NavLink, Link } from "react-router-dom";
+import { Button, Navbar, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import MobileBar from "./MobileBar";
 import { FaPlusSquare } from "react-icons/fa";
 import { IoIosRocket } from "react-icons/io";
@@ -117,27 +117,26 @@ function AppBar() {
                 </Link>
               </div>
             )}
-            <a href={"/dashboard/pricing"} className={`mx-2`}>
+            <Link to={"/dashboard/plans"} className={`mx-2`}>
               <div
                 className={`Links ${
-                  path === "/dashboard/pricing" ? "IsNavActive" : ""
+                  path === "/dashboard/plans" ? "IsNavActive" : ""
                 }`}
               >
                 <IoIosRocket
                   size={25}
-                  color={path === "/dashboard/pricing" ? "#f81b55" : "#c5cae9"}
+                  color={path === "/dashboard/plans" ? "#f81b55" : "#c5cae9"}
                 />
                 <button
                   className="AppbarLinks mx-2"
                   style={{
-                    color:
-                      path === "/dashboard/pricing" ? "#f81b55" : "#c5cae9",
+                    color: path === "/dashboard/pans" ? "#f81b55" : "#c5cae9",
                   }}
                 >
                   Pricing
                 </button>
               </div>
-            </a>
+            </Link>
           </Nav>
           <Nav>
             <Link to="/login">

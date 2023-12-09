@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "./layout/Layout";
 import Home from "./pages/Home/Home";
-import Pricing from "./pages/Pricing/Pricing";
 import Songs from "./Components/Song/Songs";
 import Filter from "./Components/Song/filter/Filter";
 import Release from "./Components/Release/Release";
@@ -10,6 +9,7 @@ import Lyrics from "./pages/Lyrics/Lyrics";
 import VideoPage from "./pages/VideoPage/VideoPage";
 import Login from "./pages/Login/Login";
 import Comingsoon from "./pages/ComingSoon/comingsoon";
+import PricingPage from "./pages/Pricing/Pricing";
 
 const router = createBrowserRouter([
   {
@@ -32,8 +32,8 @@ const router = createBrowserRouter([
         name: "Login",
       },
       {
-        path: "dashboard/pricing",
-        element: <Pricing />,
+        path: "dashboard/plans",
+        element: <PricingPage />,
         name: "Pricing",
       },
       {
